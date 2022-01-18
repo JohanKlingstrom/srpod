@@ -9,7 +9,8 @@ class EpisodeList extends React.Component {
                 {
                     this.props.episodes.map(episode => {
                         return <Episode episode={episode}
-                         key={episode.id} />
+                         key={episode.id} 
+                         onAdd={this.props.onAdd} />
                     })
                 }
             </div>

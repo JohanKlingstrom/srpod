@@ -2,6 +2,7 @@ body,
 html,
 #root {
   height: 100%;
+  background-color: #1a402b;
 }
 
 html {
@@ -28,6 +29,10 @@ h2 {
 
 article {
   padding-top: 20px;
+}
+
+a {
+  text-decoration: none;
 }
 
 .App {

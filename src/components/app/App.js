@@ -31,7 +31,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <h1>sr<span className="highlight">Pod</span></h1>
+        <a href='/'><h1>sr<span className="highlight">Pod</span></h1></a>
         <div className="App">
           <article className="main-content">
             <Player currentEpisode={this.state.currentEpisode} />

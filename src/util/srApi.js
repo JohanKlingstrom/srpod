@@ -1,6 +1,5 @@
 const srApi = {
     search(term) {
-        const episodeList = {};
         return fetch(`http://api.sr.se/api/v2/episodes/search/?query=${term}&format=json`)
         .then(res => {
             return res.json();

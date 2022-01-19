@@ -8,3 +8,5 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 The project uses React for the user interface, and grabs data from the Swedish Radio open API.
 
+The project is published and hosted through Netlify at: https://srpod.netlify.app/
+

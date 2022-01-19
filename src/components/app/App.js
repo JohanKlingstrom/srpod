@@ -21,7 +21,6 @@ class App extends React.Component {
     srApi.search(term).then(searchResults => {
       this.setState({searchResults: searchResults})
     })
-    // console.log(this.state.searchResults);
   }
 
   addEpisode(episode) {
@@ -34,7 +33,12 @@ class App extends React.Component {
         <a href='/'><h1>sr<span className="highlight">Pod</span></h1></a>
         <div className="App">
           <article className="main-content">
-            <Player currentEpisode={this.state.currentEpisode} />
+            {this.state.currentEpisode.id > 0 ? (
+              <Player currentEpisode={this.state.currentEpisode} />
+            ) : (
+              <h2>Load in an episode to begin.</h2>
+            )}
+            
           </article>
           <SearchBar onSearch={this.search} />
           <div className="App-playlist">

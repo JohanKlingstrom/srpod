@@ -11,6 +11,7 @@ class Episode extends React.Component {
     addEpisode() {
         this.props.onAdd(this.props.episode);
     }
+    
 
     render() {
         return (

@@ -1,6 +1,6 @@
 const srApi = {
     search(term) {
-        return fetch(`http://api.sr.se/api/v2/episodes/search/?query=${term}&format=json`)
+        return fetch(`https://api.sr.se/api/v2/episodes/search/?query=${term}&format=json`)
         .then(res => {
             return res.json();
         }).then(jsonResponse => {
